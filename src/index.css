@@ -103,7 +103,16 @@ header img {
   background-color: var(--bg-color);
   z-index: 9;
 }
+.nodata{
+  background-color: var(--bg-color-content);
+  padding: 2rem;
+  margin-top: 3px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .coin img {
   height: 30px;
 }
@@ -470,12 +479,21 @@ p {
   font-size: large;
   padding: 1rem;
   gap: 1.2rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .count div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+  padding: 1px 3px;
 }
 
 .count p {
@@ -506,18 +524,51 @@ p {
   align-items: center;
 }
 
-.maxcost {
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-
 .countinput {
   border-radius: 8px;
+  width: 65%;
   display: flex;
   justify-content: center;
-  width: 30%;
   background-color: var(--bg-color);
   font-size: large;
+  align-items: center;
+}
+.collateral{
+  display: flex;
+  align-items: center;
+}
+.colinput{  
+  width: 65%;
+  display: flex;
+  border-radius: 8px;
+  justify-content: end !important;
+  align-items: center;
+  background-color: var(--bg-color);
+} 
+.colinput .countinput input {
+  text-align: right;
+  border: 0px;
+  display: flex;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.3rem 0.2rem;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+}
+
+.count input::-webkit-outer-spin-button,
+.count input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.stablecoin{
+  padding-right: .5rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-color-second);
 }
 
 .openposition {
@@ -540,6 +591,13 @@ p {
   color: var(--button-text-color);
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .buton_disable {
   width: 80%;
@@ -555,6 +613,12 @@ p {
   color: var(--text-color-second);
   font-size: 16px;
   font-weight: 500;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /* Open Positions */
 
@@ -611,6 +675,19 @@ p {
   border: 1px solid var(--text-color-second);
   color: var(--text-color-second);
   border-radius: 31px;
+}
+
+.noposition{
+  min-height: 300px;
+  background-color: var(--bg-color-content);
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-second);
+  font-size: large;
+  padding: 2rem;
+  text-align: center;
 }
 
 

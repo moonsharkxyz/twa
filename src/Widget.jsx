@@ -1,4 +1,6 @@
+// TradingViewWidget.jsx
 import React, { useEffect, useRef, memo, useState } from 'react';
+import Spinner from "./Spinner/Spinner"
 
 function TradingViewWidget({coin}) {
   const contariner = useRef();

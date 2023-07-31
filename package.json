@@ -25,7 +25,8 @@
     "rollup-plugin-polyfill-node": "^0.12.0",
     "ton": "13.5",
     "ton-core": "0.49.0",
-    "ton-crypto": "3.2"
+    "ton-crypto": "3.2",
+    "tonweb": "^0.0.60"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
