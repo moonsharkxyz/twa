@@ -1,6 +1,4 @@
-// TradingViewWidget.jsx
-import React, { useEffect, useRef, memo, useState } from 'react';
-import Spinner from "./Spinner/Spinner"
+import React, { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget({coin}) {
   const contariner = useRef();
@@ -51,8 +49,7 @@ function TradingViewWidget({coin}) {
         }`;
         contariner.current.replaceChildren(scrpt);
   }, [coin]);
-  return (
-  <><div className="tradingview-widget-container" ref={contariner}></div><div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">{/* <span className="blue-text">Track all markets on TradingView</span> */}</a></div></>);
+  return (<div className="tradingview-widget-container" ref={contariner}></div>);
 }
 
 export default memo(TradingViewWidget);

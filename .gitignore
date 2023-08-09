@@ -2,3 +2,7 @@
 /dist
 /package-lock.json 
 /src/consts.js
+/src/Earn.jsx
+/src/opt_price.js
+/src/utils/crc32.jsx
+/.gitignore
